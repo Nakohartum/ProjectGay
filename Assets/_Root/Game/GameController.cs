@@ -1,17 +1,21 @@
 using System;
 using ProjectGay.Enums;
+using ProjectGay.ScriptableObjects;
+using ProjectGay.Tile;
 using UnityEngine;
 
 namespace ProjectGay.Game
 {
     public class GameController : IUpdatable
     {
-        private GameResources.GameResources _gameResources;
+        private GameResources _gameResources;
         public State State { private set; get; }
+        public LevelGenerator LevelGenerator { get; }
 
-        public GameController(GameState currentGameState, GameResources.GameResources gameResources)
+        public GameController(GameState currentGameState, GameResources gameResources)
         {
             _gameResources = gameResources;
+            LevelGenerator = new LevelGenerator(gameResources);
             ChooseState(currentGameState);
             State.HandleState();
         }
