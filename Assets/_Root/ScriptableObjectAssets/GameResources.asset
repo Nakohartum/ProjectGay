@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: GameResources
   m_EditorClassIdentifier: 
   MainMenuViewPrefab: {fileID: 7287804790172915088, guid: f28af76cf20ed1b4bb228a221581d9f3, type: 3}
+  LevelScriptableObject: {fileID: 11400000, guid: c4531867f362e7440adde38697e44047, type: 2}
+  PlayerPrefab: {fileID: 8772966956546426060, guid: 5d73b0b7c969ab148a36bc627c025b1a, type: 3}

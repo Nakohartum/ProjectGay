@@ -1,5 +1,6 @@
 using ProjectGay.Enums;
 using ProjectGay.Menu;
+using ProjectGay.Tile;
 using UnityEngine;
 
 namespace ProjectGay.Game
@@ -22,7 +23,7 @@ namespace ProjectGay.Game
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
-                ChangeState(GameState.Pause);
+                _gameController.LevelGenerator.GenerateLevel();
             }
         }
     }

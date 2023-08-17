@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using ProjectGay.Enums;
 using ProjectGay.Game;
+using ProjectGay.ScriptableObjects;
 using UnityEngine;
 
 namespace ProjectGay
@@ -10,7 +11,7 @@ namespace ProjectGay
     public class GameManager : MonoBehaviour
     {
         [SerializeField] private GameState _initialGameState;
-        [SerializeField] private GameResources.GameResources _gameResources;
+        [SerializeField] private GameResources _gameResources;
         private GameController _gameController;
 
         private void Awake()

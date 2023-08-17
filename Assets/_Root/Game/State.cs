@@ -4,7 +4,7 @@ namespace ProjectGay.Game
 {
     public abstract class State : IUpdatable
     {
-        private GameController _gameController;
+        protected GameController _gameController;
 
         protected State(GameController gameController)
         {
